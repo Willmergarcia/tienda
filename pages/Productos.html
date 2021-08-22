@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+
+</head>
+<body>
+    <!-- Base layout -->
+    <div class="u-layout">
+      <!-- Header -->
+      <input type="checkbox" class="menu__checkbox" id="open">
+      <header class="header">
+        <div class="u-wrapper">
+          <div class="header__content">
+            <a href="../index.html" class="header__logo"></a>
+            <label for="open" class="menu-open"></label>
+            <nav class="navbar">
+              <div class="u-wrapper">
+                <ul class="navbar__menu">
+                  <li class="navbar__menu--items"><a href="../index.html">Inicio</a></li>
+                  <li class="navbar__menu--items"><a href="product.html">Productos</a></li>
+                  <li class="navbar__menu--items"><a target="_blank" href="login.html">Registrate</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- inputs para detectar el click -->
+      <input type="radio" name="productos-checkbox" id="prod-mas-vendido" class="productos-checkbox" checked>
+      <input type="radio" name="productos-checkbox" id="prod-Damas" class="productos-checkbox">
+      <input type="radio" name="productos-checkbox" id="prod-Caballeros" class="productos-checkbox">
+      <input type="radio" name="productos-checkbox" id="prod-Niños" class="productos-checkbox">
+       <!-- aside left -->
+       <aside class="aside">
+        <div class="u-wrapper">
+          <div class="aside__box">
+            <figure class="aside__logo">
+              <img src="../imagenes/logo.png" alt="logo">
+            </figure>
+          </div>
+          <h1 class="aside__title">Tienda <span>LA BARATA</span></h1>
+          <div class="tabs">
+            <!-- tabs items -->
+            <label for="prod-mas-vendido" class="tabs__items u-card-base" >
+              <figure class="tabs__items--img">
+                <img src="../imagenes/monft.JPG" alt="">
+              </figure>
+              <h2 class="tabs__items--title">Lo mas buscado</h2>
+              <img src="../imagenes/proximo.svg" alt="next" class="tabs__items--icon-next">
+            </label>
+            <!-- tabs items -->
+            <label for="prod-Damas" class="tabs__items u-card-base">
+              <figure class="tabs__items--img">
+                <img src="../imagenes/vestidocuello.PNG" alt="">
+              </figure>
+              <h2 class="tabs__items--title">Damas</h2>
+              <img src="../imagenes/proximo.svg" alt="next" class="tabs__items--icon-next">
+            </label>
+            <!-- tabs items -->
+            <label for="prod-Caballeros" class="tabs__items u-card-base">
+              <figure class="tabs__items--img">
+                <img src="../imagenes/camisa.JPG" alt="">
+              </figure>
+              <h2 class="tabs__items--title">Caballero</h2>
+              <img src="../imagenes/proximo.svg" alt="next" class="tabs__items--icon-next">
+            </label>
+            <!-- tabs items -->
+            <label for="prod-Niños" class="tabs__items u-card-base">
+              <figure class="tabs__items--img">
+                <img src="../imagenes/vestidocasual.JPG" alt="">
+              </figure>
+              <h2 class="tabs__items--title">Niños</h2>
+              <img src="../imagenes/proximo.svg" alt="next" class="tabs__items--icon-next">
+            </label>
+          </div>
+        </div>
+      </aside>
+      <main class="main">
+        <div class="u-wrapper">
+          <div class="tabs-grid">
+            <!-- tabs productos mas buscados -->
+            <div class="tabs-grid__contet" id="tabs-prod-mas-vendido">
+              <h1 class="u-title">Los mas buscado!!!</h1>
+              <div class="u-wrapper">
+                <div class="tabs-grid__contet-Principal">
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/vestidocuello.PNG" alt="producto1">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Vestido de cuello</h3>
+                        <p class="card-horizontal__description">Vestido con cuello color blanco </p>
+                      </div>
+                      <span class="card-horizontal__cost">135.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/Capucha.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Capucha</h3>
+                        <p class="card-horizontal__description">Capucha con estampado de Slogan con bolso de canguro</p>
+                      </div>
+                      <span class="card-horizontal__cost">100.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/playera.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Camisa</h3>
+                        <p class="card-horizontal__description">Hombres Camisa Polo En Contraste Con Cinta De Rayas </p>
+                      </div>
+                      <span class="card-horizontal__cost">75.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/monft.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Blusa con Tirantes</h3>
+                        <p class="card-horizontal__description">MOTF PREMIUM Top De Tirantes Drapeado De Seda Grado 6A 22MM </p>
+                      </div>
+                      <span class="card-horizontal__cost">125.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/premiumvestido.JPG" alt="producto1">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Vestido Sedoso</h3>
+                        <p class="card-horizontal__description">MOTF PREMIUM 100% 22MM GRADO 6A SEDOSO Vestido </p>
+                      </div>
+                      <span class="card-horizontal__cost">235.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/camisa.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Camisa Estampada</h3>
+                        <p class="card-horizontal__description">Hombres Camisa Con Estampado Tropical Con Botón Sin Camiseta</p>
+                      </div>
+                      <span class="card-horizontal__cost">75.00</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- Tabla producto de dama -->
+            <div class="tabs-grid__contet" id="tabs-prod-Damas">
+              <h1 class="u-title">Productos para Dama</h1>
+              <div class="u-wrapper">
+                <div class="tabs-grid__container">
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/premiumvestido.JPG" alt="producto1">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vestido</h3>
+                        <p class="card-vertical__description">Vestido para dama, casual y elegante </p>
+                      </div>
+                      <span class="card-vertical__cost">149.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/vestidofiesta.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vestido Fiestas</h3>
+                        <p class="card-vertical__description">Romwe - Vestido de fiesta elástico de corte acampanado, con vuelo </p>
+                      </div>
+                      <span class="card-vertical__cost">175.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/vestidocalvin.JPG" alt="producto3">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vistido Calvin</h3>
+                        <p class="card-vertical__description">Calvin Klein Vestido de cambio para mujer con herrajes en tono dorado </p>
+                      </div>
+                      <span class="card-vertical__cost">195.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertucal -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/vestidocolores.JPG" alt="platillo4">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vestido de Colores</h3>
+                        <p class="card-vertical__description">Vestido calvin </p>
+                      </div>
+                      <span class="card-vertical__cost">225.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/vestidofranjas.JPG" alt="producto1">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vestido de franjas</h3>
+                        <p class="card-vertical__description">Vestido Calvin </p>
+                      </div>
+                      <span class="card-vertical__cost">125.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/vestidovolantes.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vestido de Volantes</h3>
+                        <p class="card-vertical__description">Vestido de mujer, Calvin con Volantes</p>
+                      </div>
+                      <span class="card-vertical__cost">175.00</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- tabs producto caballeros -->
+            <div class="tabs-grid__contet" id="tabs-prod-Caballeros">
+              <h1 class="u-title">Productos Caballeros</h1>
+              <div class="u-wrapper">
+                <div class="tabs-grid__contet-Principal">
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/Capucha.JPG" alt="producto1">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Capucha</h3>
+                        <p class="card-horizontal__description">Capucha color blanca con bolsa de canguro</p>
+                      </div>
+                      <span class="card-horizontal__cost">100.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/camisa.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Camisa</h3>
+                        <p class="card-horizontal__description">Hombres Camisa Polo En Contraste Con Cinta De Rayas </p>
+                      </div>
+                      <span class="card-horizontal__cost">75.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/playera.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Apple black</h3>
+                        <p class="card-horizontal__description">Hombres Camisa Polo En Contraste Con Cinta De Rayas </p>
+                      </div>
+                      <span class="card-horizontal__cost">75.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/CamisaLino.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Camisa de Lino</h3>
+                        <p class="card-horizontal__description">Camisa para caballero de lino</p>
+                      </div>
+                      <span class="card-horizontal__cost">125.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/CamisaGuayavera.JPG" alt="producto1">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Camisa Guayabera</h3>
+                        <p class="card-horizontal__description">Cubavera Guayabera de manga corta para hombre </p>
+                      </div>
+                      <span class="card-horizontal__cost">145.00</span>
+                    </div>
+                  </article>
+                  <!-- card horizontal -->
+                  <article class="u-card-base card-horizontal">
+                    <figure class="card-horizontal__img">
+                      <img src="../imagenes/pantalonrecto.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-horizontal__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-horizontal__title">Pantalon recto</h3>
+                        <p class="card-horizontal__description">Pantalones rectos para hombre, ajuste recto y cómodo </p>
+                      </div>
+                      <span class="card-horizontal__cost">155.00</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <!-- tabs conteindo para niños -->
+            <div class="tabs-grid__contet" id="tabs-prod-Niños">
+              <h1 class="u-title">Prodcutos para niños</h1>
+              <div class="u-wrapper">
+                <div class="tabs-grid__container">
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/timberland.JPG" alt="producto1">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Juego timberland</h3>
+                        <p class="card-vertical__description">Juego de ropa para niño tipo timberland </p>
+                      </div>
+                      <span class="card-vertical__cost">45.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/Conjuntopantalones.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Conjunto Pantalones</h3>
+                        <p class="card-vertical__description">Juego de pantalones para niños</p>
+                      </div>
+                      <span class="card-vertical__cost">90.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/juegorallas.JPG" alt="producto3">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Juego a Rayas</h3>
+                        <p class="card-vertical__description">Juego de ropa a rayas para niño. </p>
+                      </div>
+                      <span class="card-vertical__cost">125.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertucal -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/pantalonespolo.JPG" alt="platillo4">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Juego pantalones Polo</h3>
+                        <p class="card-vertical__description">Patalones para niño tipo polo. </p>
+                      </div>
+                      <span class="card-vertical__cost">113.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/vestidocasual.JPG" alt="producto1">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vestido Casual</h3>
+                        <p class="card-vertical__description">Vestido par niñas, casual para verano</p>
+                      </div>
+                      <span class="card-vertical__cost">99.00</span>
+                    </div>
+                  </article>
+                  <!-- card vertical -->
+                  <article class="u-card-base card-vertical">
+                    <figure class="card-vertical__img">
+                      <img src="../imagenes/vestidoniña.JPG" alt="producto2">
+                    </figure>
+                    <div class="card-vertical__wrap-text u-wrapper">
+                      <div>
+                        <h3 class="card-vertical__title">Vestido elegante</h3>
+                        <p class="card-vertical__description">vestido de encaje de niña de flores desfile niños vestidos de fiesta de Navidad </p>
+                      </div>
+                      <span class="card-vertical__cost">199.00</span>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="u-wrapper">
+          <div class="footer-contendio">
+            <p class="footer-direccion">6ta Avenida Zona 1 Guatatemala</p>
+            <p class="footer__copy">© 2021 LA BARARA. Derechos reservados</p>
+            <div class="footer__actions">
+              <input type="email" class="u-input footer__actions--email" placeholder="Ingresa tu correo electronico">
+              <button type="submit" class="footer__actions--button">Contactanos</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  </html>

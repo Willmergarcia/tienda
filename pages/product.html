@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <title>Carrito Compras</title>
+</head>
+
+<body>
+
+
+    <header>
+
+
+        <div class="u-wrapper">
+            <div class="header__content">
+              <a href="./index.html" class="header__logo"></a>
+              <label for="open" class="menu-open"></label>
+              <nav class="navbar">
+                <div class="u-wrapper">
+                  <ul class="navbar__menu">
+                    <li class="navbar__menu--items"><a href="../index.html">Inicio</a></li>
+                   
+                    <li class="navbar__menu--items"><a target="_blank" href="../pages/login.html">Registrate</a></li>
+                  </ul>
+                </div>  
+              </nav>
+            </div>
+          </div>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md">
+                    <img src="../imagenes/logo.png" width="100" alt="logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                
+                                <img src="../imagenes/carrito.png" class="nav-link dropdown-toggle img-fluid" style="width: 150;" height="90px"
+                                    width="90px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"> 
+                                    
+                                <div id="carrito" class="dropdown-menu scroll" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>descripcion</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" >Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" >Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <hgroup>
+                <h1>Lista de Productos</h1>
+                <h4>Selecciona uno de nuestros productos y realiza una Compra</h4>
+              </hgroup> 
+
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm Block_producto">
+                    <div>
+                        <h4>camisa</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../imagenes/camisa.JPG" class="card-img-top img_cls" alt="CAMISA">
+                        <h1 class="card-title pricing-card-title precio">Q.<span class="">75</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Camisa para hombre</li>
+
+                        </ul>
+                        <a href="#" class="agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm Block_producto">
+                    <div>
+                        <h4>Camisa guayavera </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../imagenes/CamisaGuayavera.JPG" class="card-img-top img_cls" alt="GAYAVERA">
+                        <h1 class="card-title pricing-card-title precio">Q.<span class="">150</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Camisa guayavera</li>
+                            
+                        </ul>
+                        <a href="#" class="agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm Block_producto">
+                    <div>
+                        <h4>Capucha</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../imagenes/Capucha.JPG" class="card-img-top img_cls" alt="CAPUCHA">
+                        <h1 class="card-title pricing-card-title precio">Q.<span class="">110</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Capucha″</li>
+                        </ul>
+                        <a href="" class="agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center ">
+                
+                <div class="card mb-4 shadow-sm Block_producto" >
+                    <div>
+                        <h4>Playera</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../imagenes/playera.JPG" class="card-img-top img_cls" alt="PLAYERA">
+                        <h1 class="card-title pricing-card-title precio">Q.<span class="">150</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Payera talla s</li>
+                          
+                        </ul>
+                        <a href="" class="agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm Block_producto">
+                    <div>
+                        <h4>Vestida niña</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../imagenes/vestidoniña.JPG" class="card-img-top img_cls" alt="VESTIDONIÑA">
+                        <h1 class="card-title pricing-card-title precio">Q.<span class="">175</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Vestido niña</li>
+                           
+                        </ul>
+                        <a href="" class="agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm Block_producto">
+                    <div>
+                        <h4>Pantalon polo</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="../imagenes/pantalonespolo.JPG" class="card-img-top img_cls" alt="PANTALONPOLO">
+                        <h1 class="card-title pricing-card-title precio">Q.<span class="">175</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Pantalon polo</li>
+                           
+                        </ul>
+                        <a href="" class="agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+               
+
+               
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pedido.js"></script>
+    <footer class="footer">
+        <div class="u-wrapper">
+          <div class="footer-contendio">
+            <p class="footer-direccion">6ta Avenida Zona 1 Guatatemala</p>
+            <p class="footer__copy">© 2021 LA BARARA. Derechos reservados</p>
+            <div class="footer__actions">
+              <input type="email" class="u-input footer__actions--email" placeholder="Ingresa tu correo electronico">
+              <button type="submit" class="footer__actions--button">Contactanos</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+
+</html>
