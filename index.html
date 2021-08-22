@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA</title>
+    <link rel="icon" type="image/png" href="imagenes/icono.png">
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+
+
+</head>
+<body>
+     <!-- Base layout -->
+  <div class="u-layout">
+    <!-- Header -->
+    <input type="checkbox" class="menu__checkbox" id="open">
+    <header class="header">
+      <div class="u-wrapper">
+        <div class="header__content">
+          <a href="./index.html" class="header__logo"></a>
+          <label for="open" class="menu-open"></label>
+          <nav class="navbar">
+            <div class="u-wrapper">
+              <ul class="navbar__menu">
+                <li class="navbar__menu--items"><a href="./index.html">Inicio</a></li>
+                <li class="navbar__menu--items"><a target="_blank" href="pages/product.html">Productos</a></li>
+                <li class="navbar__menu--items"><a target="_blank" href="pages/productos.html">Mas Buscado</a></li>
+             
+                <li class="navbar__menu--items"><a target="_blank" href="pages/catalogo.html">Catalogo</a></li>
+                 <li class="navbar__menu--items"><a target="_blank" href="pages/login.html">Registrate</a></li>
+              </ul>
+            </div>  
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Seccion Hero -->
+    <section class="hero">
+      <div class="hero__container">
+        <h1 class="hero__title">Bienvenido a "LA BARATA"</h1>
+      </div>
+    </section>
+    <!-- aside left -->
+    <aside class="aside">
+      <div class="u-wrapper">
+        <div class="aside__box">
+          <figure class="aside__logo">
+            <img src="imagenes/logo.png" alt="logo">
+          </figure>
+        </div>
+        <a target="_blank" href="pages/Productos.html" class="u-card-base card-menu">
+          <div class="card-menu__grid">
+            <h2 class="card-menu__title">Menu Principal</h2>
+            <figure class="card-menu__icon">
+              <img src="images/proximo.svg" alt="">
+            </figure>
+          </div>
+        </a>    
+      </div>
+    </aside>
+    <!-- main -->
+    <main class="main">
+      <!-- seccion de hisotira -->
+      <section class="history">
+        <div class="u-wrapper">
+          <h2 class="u-title">Nuestra Historia</h2>
+          <div class="history__grid">
+            <!-- articulos de historia -->
+            <article class="review">
+              <h3 class="review__title">2019</h3>
+              <p class="u-description">
+               En el año 2018 abrimos nuestra primera tienda ubicada en 6ta Avenida Zona 1, Ciudad Guatemala.
+              </p>
+            </article>
+            <!-- articulos de historia -->
+            <article class="review">
+              <h3 class="review__title">2020</h3>
+              <p class="u-description">
+                En este año se logro abrir sucursales en los departmaneto de Zacatepequez, Jutiapa, logrando alcanzar ventas de un 60% mas que el año anterior.
+              </p>
+            </article>
+            <!-- articulos de historia -->
+            <article class="review">
+              <h3 class="review__title">2021</h3>
+              <p class="u-description">
+                Se plante las ventas en linea para ponerlos al margen con las competenecias, para abarcar todo el pais, con  compras sin tener que salir de tu casa.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- seccion de compromiso -->
+      <section class="compromise">
+        <div class="u-wrapper">
+          <h2 class="u-title">Nuestro Compromiso</h2>
+          <p class="u-description">Brindar nuestro mejor servicio y calidad en productos de primera, llevar sus productos en el mejor estado, permiendo asi la satisfaccion de nuestros clientes.</p>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="u-wrapper">
+        <div class="footer-contendio">
+          <p class="footer-direccion">6ta Avenida Zona 1 Guatatemala</p>
+          <p class="footer__copy">© 2021 LA BARARA. Derechos reservados</p>
+          <div class="footer__actions">
+            <input type="email" class="u-input footer__actions--email" placeholder="Ingresa tu correo electronico">
+            <button type="submit" class="footer__actions--button">Contactanos</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
